@@ -23,3 +23,5 @@ The project is designed for remote storage of files and access to them from anyw
 4) write the command "python manage.py makemigrations"
 5) write the command "python manage.py migrate"
 6) Then, in the "Cloud_Storage_App" folder, run the file "main.py"
+
+Made with ❤️ by TheProgersTeam
