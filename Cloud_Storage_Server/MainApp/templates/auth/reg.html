@@ -1,0 +1,177 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="verification" content="d25dfb208856abfcf543f36bbb3481" />
+    <title>{{title}}</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Nunito");
+        body {
+        font-family: 'Nunito', sans-serif;
+        background-color: #1d1d1d;
+        margin: 0;
+        height: 100vh;
+        }
+
+        input {
+            color: #999;
+        }
+
+        .wrapper {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .wrapper .content {
+        background-color: #27292d;
+        box-shadow: 0 0 11px #323536;
+        padding: 30px 15px;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 500px;
+        min-width: 200px;
+        }
+        .wrapper .content button {
+        padding: 15px;
+        width: 150px;
+        border: unset;
+        background: #2f3236;
+        border-radius: 50px;
+        color: #333;
+        cursor: pointer;
+        }
+        .wrapper .content button:focus {
+        outline: none;
+        }
+        .wrapper .content header {
+        text-align: center;
+        }
+        .wrapper .content header h1 {
+        color: #fff;
+        margin-top: 0;
+        font-size: 230%;
+        }
+        .wrapper .content .social-login {
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        }
+        .wrapper .content .social-login button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background .5s;
+        -webkit-transition: background .5s;
+        }
+        .wrapper .content .social-login button:first-child {
+        margin-right: 10px;
+        }
+        .wrapper .content .social-login button:hover {
+        background-color: #eee;
+        }
+        .wrapper .content .social-login button span {
+        font-size: 17px;    
+        color: #777;
+        margin-left: 5px;
+        }
+        .wrapper .content .login-form {
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+        .wrapper .content .login-form .input-group {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        width: 100%;
+        max-width: 310px;
+        }
+        .wrapper .content .login-form .input-group input {
+        padding: 15px;
+        font-size: 13px;
+        border: 1px solid #262936;
+        background-color: #2f3236;
+        border-radius: 50px;
+        tranistion: background .5s;
+        -webkit-tranistion: background .5s;
+        }
+        .wrapper .content .login-form .input-group input:focus {
+        color: #fff;
+        outline: 0;
+        }
+        .wrapper .content .login-form .input-group label {
+        color: #999;
+        font-size: 12px;
+        margin-bottom: 3px;
+        margin-left: 16px;
+        }
+        .wrapper .content .login-form .input-group button {
+        background-color: #0071d4;
+        border: unset;
+        color: #fff;
+        align-self: center;
+        margin-top: 15px;
+        transition: background .5s;
+        -webkit-transition: background .5s;
+        }
+        .wrapper .content .login-form .input-group button:hover {
+        background-color: #2f3236;
+        }
+        .wrapper .content footer {
+        padding-top: 5px;
+        text-align: center;
+        }
+        .wrapper .content footer {
+        font-size: 13px;
+        }
+
+        @media screen and (max-width: 720px) {
+        .wrapper .content {
+            padding-right: 0;
+            padding-left: 0;
+            margin: 0 10px;
+        }
+        }
+    </style>
+</head>
+{% include 'loaders/loader.html' %}
+<body>
+
+    <section class="wrapper">
+        <div class="content">
+          <header>
+            <h1>Welcome 👋</h1>
+          </header>
+          <section>
+            <form method="POST" action="" class="login-form">
+              {% csrf_token %}
+              <div class="input-group">
+                <input type="text" name="username" class="form-style" placeholder="Your Username" id="id_username" autocomplete="off">
+              </div>
+              <div class="input-group">
+                <input type="email" name="email" class="form-style" placeholder="Your Email" id="id_email" autocomplete="off">
+              </div>
+              <div class="input-group">
+                <input type="password" name="password1" class="form-style" placeholder="Your Password" id="id_password1" autocomplete="off">
+              </div>
+              <div class="input-group">
+                <input type="password" name="password2" class="form-style" placeholder="Confirm Password" id="id_password2" autocomplete="off">
+              </div>
+              <div type="submit" class="input-group"><button>Sing up</button></div>
+            </form>
+          </section>
+        </div>
+      </section>
+
+</body>
+
+  
+  
+  
